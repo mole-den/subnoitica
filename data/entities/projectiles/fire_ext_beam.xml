@@ -73,15 +73,15 @@
     emit_real_particles="0"
 	render_on_grid="1"
     emit_cosmetic_particles="1"
-    emission_interval_min_frames="1"
-    emission_interval_max_frames="2"
+    emission_interval_min_frames="2"
+    emission_interval_max_frames="3"
 	fade_based_on_lifetime="1"
     is_emitting="1" >
   </ParticleEmitterComponent>
   
 	<VariableStorageComponent
 		name="projectile_file"
-		value_string="data/entities/projectiles/fire_ext_beam.xml"
+		value_string="data/entities/projectiles/SUBNOITICA_FIRE_EXTINGUISHER_beam.xml"
 		>
 	</VariableStorageComponent>
 	

@@ -3,7 +3,7 @@ local to_insert = {
         id                 = "FIRE_EXT",
         name               = "Fire Extinguisher",
         description        = "Extinguishes fires.",
-        sprite             = "data/ui_gfx/gun_actions/use.png",
+        sprite             = "data/ui_gfx/gun_actions/subnoitica_fire_extinguisher.png",
         type               = ACTION_TYPE_PROJECTILE,
         spawn_level        = "",
         spawn_probability  = "",
@@ -12,7 +12,7 @@ local to_insert = {
         max_uses           = 1000,
         action = function()
             add_projectile("data/entities/projectiles/fire_ext.xml")
-			shot_effects.recoil_knockback = shot_effects.recoil_knockback + 15.0
+			shot_effects.recoil_knockback = shot_effects.recoil_knockback + 10.0
         end,
     },
 }
