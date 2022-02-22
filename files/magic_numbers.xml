@@ -1,4 +1,6 @@
 <MagicNumbers 
-  BIOME_MAP="mods/subnoitica/files/biome_map.png"  
+  BIOME_MAP="mods/subnoitica/files/biome_map.png" 
+  snowfall_chance="0"
+  rainfall_chance="0" 
   > 
 </MagicNumbers>

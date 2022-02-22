@@ -1,3 +1,6 @@
+ModLuaFileAppend( "data/scripts/gun/gun_actions.lua", "mods/subnoitica/files/actions.lua" )
+ModLuaFileAppend( "data/scripts/perks/perk_list.lua", "mods/subnoitica/files/perk_list.lua")
+ModMaterialsFileAdd("mods/subnoitica/files/materials.xml")
 
 
 local nxml = dofile_once("mods/subnoitica/lib/nxml.lua")

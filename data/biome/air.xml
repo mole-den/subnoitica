@@ -1,0 +1,17 @@
+<Biome>
+  <Topology 
+    name="_EMPTY_"
+    background_image=""
+    background_use_neighbor="0"
+
+    lua_script="data/scripts/biomes/air.lua"
+    >
+  </Topology>
+
+  <Materials 
+    name="mountain" 
+     >
+  </Materials>
+
+</Biome>
+
