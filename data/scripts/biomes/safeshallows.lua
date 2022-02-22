@@ -14,21 +14,21 @@ g_fish =
 		prob   		= 0.3,
 		min_count	= 3,
 		max_count	= 5,    
-		entity 	= "data/entities/animals/fish.xml"
+		entity 	= "data/entities/animals/peeper/peeper.xml"
 	},
 
 	{
-		prob   		= 0.3,
-		min_count	= 1,
-		max_count	= 3,    
-		entity 	= "data/entities/animals/fish_large.xml"
+		prob   		= 0.25,
+		min_count	= 2,
+		max_count	= 6,    
+		entity 	= "data/entities/animals/bladderfish/bladderfish.xml"
 	},
 
 	{
 		prob   		= 0.03,
 		min_count	= 1,
 		max_count	= 1,    
-		entity 	= "data/entities/animals/eel.xml"
+		entity 	= "data/entities/animals/peeper/peeper.xml"
 	},
 }
 

@@ -128,9 +128,9 @@
   ></ControlsComponent>
   
   <DamageModelComponent 
-    air_in_lungs="7" 
-    air_in_lungs_max="7" 
-    air_lack_of_damage="0.6" 
+    air_in_lungs="14" 
+    air_in_lungs_max="14" 
+    air_lack_of_damage="0.3" 
     air_needed="1" 
     falling_damage_damage_max="1.2" 
     falling_damage_damage_min="0.1" 
