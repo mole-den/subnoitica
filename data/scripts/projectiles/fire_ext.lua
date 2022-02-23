@@ -5,9 +5,9 @@ local x, y, angle = EntityGetTransform( entity_id )
 
 angle = 0 - angle
 
-local count = 12
+local count = 8
 local pi = 3.14159
-local arc = pi * 0.6
+local arc = pi * 0.4
 local increment = arc / count
 local current = angle - ( arc * 0.5 )
 local speed = 220
