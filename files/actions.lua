@@ -17,7 +17,7 @@ local to_insert = {
             add_projectile("data/entities/projectiles/fire_ext_beam.xml")
             add_projectile("data/entities/projectiles/fire_ext_beam.xml")
             add_projectile("data/entities/projectiles/fire_ext_beam.xml")
-			shot_effects.recoil_knockback = shot_effects.recoil_knockback + 2.0
+			shot_effects.recoil_knockback = shot_effects.recoil_knockback + 7.5
 			c.spread_degrees = c.spread_degrees + 45.0
         end,
     },

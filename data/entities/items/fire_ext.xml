@@ -11,7 +11,7 @@
 		mana_max="100"
         max_amount_in_inventory="1"
         shooting_reduces_amount_in_inventory="0"
-        sprite_file="data/items_gfx/fire_ext.xml"
+        sprite_file="data/items_gfx/fire_ext.png"
         swim_propel_amount="0"
         throw_as_item="0"
         ui_name="Fire extinguisher"
@@ -33,7 +33,7 @@
 	
 	<HotspotComponent 
         _tags="shoot_pos" 
-        offset.x="8" 
+        offset.x="-4" 
         offset.y="0.5" >
     </HotspotComponent>
 	
@@ -47,12 +47,12 @@
 		<SpriteComponent 
 			_tags="item,enabled_in_world,enabled_in_hand" 
 			alpha="1" 
-			offset_x="2"
+			offset_x="6"
 			offset_y="5"
 			has_special_scale="1"
-			special_scale_x="0.7"
-			special_scale_y="0.7"
-            image_file="data/items_gfx/fire_ext.xml"
+			special_scale_x="0.6"
+			special_scale_y="0.6"
+            image_file="data/items_gfx/fire_ext.png"
 			next_rect_animation="default" 
 			rect_animation="default"
 			z_index="-1.5" >
