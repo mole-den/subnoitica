@@ -43,6 +43,20 @@
 			always_use_item_name_in_ui="1"
 			play_hover_animation="1" >
         </ItemComponent>
+        
+		<SpriteComponent 
+			_tags="item,enabled_in_world,enabled_in_hand" 
+			alpha="1" 
+			offset_x="2"
+			offset_y="5"
+			has_special_scale="1"
+			special_scale_x="0.7"
+			special_scale_y="0.7"
+            image_file="data/items_gfx/fire_ext.xml"
+			next_rect_animation="default" 
+			rect_animation="default"
+			z_index="-1.5" >
+		</SpriteComponent>
     </Base>
 
     <LuaComponent 
@@ -51,6 +65,15 @@
         script_source_file="mods/subnoitica/data/entities/items/fire_ext.lua"
         >
     </LuaComponent>
+
+    <!--> Scale down script <-->
+    <LuaComponent
+        _enabled="0" 
+    	_tags="enabled_in_hand" 
+		execute_every_n_frame="1"
+		script_source_file="mods/subnoitica/data/scripts/scale_update.lua"
+		>
+	</LuaComponent>
 
     <ManaReloaderComponent
         _tags="enabled_in_world,enabled_in_hand,enabled_in_inventory" >

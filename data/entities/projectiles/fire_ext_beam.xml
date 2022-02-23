@@ -47,14 +47,6 @@
     </config_explosion>
   </ProjectileComponent>
 
-  <LightComponent 
-    _enabled="1" 
-    radius="150" 
-    r="90"
-    g="50"
-    b="10">
-  </LightComponent>
-
   <ParticleEmitterComponent 
     emitted_material_name="snow"
     offset.x="0"
@@ -87,6 +79,24 @@
 	
     <MagicConvertMaterialComponent
         from_material="fire"
+        to_material="snow"
+        steps_per_frame="20"
+        loop="1"
+		is_circle="1"
+        radius="20" >
+    </MagicConvertMaterialComponent>
+
+    <MagicConvertMaterialComponent
+        from_material="liquid_fire"
+        to_material="snow"
+        steps_per_frame="20"
+        loop="1"
+		is_circle="1"
+        radius="20" >
+    </MagicConvertMaterialComponent>
+
+    <MagicConvertMaterialComponent
+        from_material="liquid_fire_weak"
         to_material="snow"
         steps_per_frame="20"
         loop="1"
