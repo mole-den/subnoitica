@@ -6,6 +6,7 @@ dofile_once("data/scripts/biome_scripts.lua")
 RegisterSpawnFunction( 0xffffeedd, "init" )
 RegisterSpawnFunction( 0xffb4a00a, "spawn_fish" )
 RegisterSpawnFunction( 0xff9797e8, "spawn_fragments" )
+RegisterSpawnFunction( 0xffff1f1a, "spawn_props" )
 
 g_fish =
 {
@@ -46,6 +47,17 @@ g_fragments =
 
 }
 
+g_props =
+{
+	total_prob = 0,
+	{
+		prob   		= 1,
+		min_count	= 1,
+		max_count	= 1,    
+		entity 	= "data/entities/props/physics_creepvine.xml"
+	},
+}
+
 function init( x, y, w, h )
 
 end
@@ -56,4 +68,8 @@ end
 
 function spawn_fragments(x, y)
 	spawn(g_fragments,x,y)
+end
+
+function spawn_props(x, y)
+	spawn(g_props,x,y)
 end

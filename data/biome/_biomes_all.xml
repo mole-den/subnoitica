@@ -32,6 +32,12 @@
 		biome_filename="data/biome/kelp_forest_open.xml"
 		height_index="0"
 		color="ff00c116">
+	</Biome> 
+
+	<Biome
+		biome_filename="data/biome/sandstone.xml"
+		height_index="0"
+		color="ff808080">
 	</Biome>
 
 	<!-- index is between 0 and 10 -->

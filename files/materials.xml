@@ -166,4 +166,32 @@
 	</StatusEffects>
   </CellData>
 
+  <CellData
+	name="creepvine_juice"
+	ui_name="Creepvine Liquid"
+  	tags="[liquid],[corrodible],[soluble],[impure],[liquid_common],[food]"
+	burnable="0"
+	density="2.123"
+	cell_type="liquid"
+	wang_color="ffffdA6b"
+	generates_smoke="0"
+	liquid_gravity="1.0"
+	liquid_sand="0"
+	liquid_stains="2"
+	on_fire="0"
+	requires_oxygen="1"
+	temperature_of_fire="10"
+	show_in_creative_mode="1"
+	>
+	<StatusEffects>
+		<Ingestion>
+			<StatusEffect type="NIGHTVISION" amount="0.5" />
+		</Ingestion>
+	</StatusEffects>
+    <Graphics 
+	texture_file="data/materials_gfx/yellowblood.png" 
+	color="ff145014" >
+    </Graphics>
+  </CellData>
+
 </Materials>
