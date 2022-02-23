@@ -11,8 +11,14 @@ local to_insert = {
         mana               = 1,
         max_uses           = 1000,
         action = function()
-            add_projectile("data/entities/projectiles/fire_ext.xml")
-			shot_effects.recoil_knockback = shot_effects.recoil_knockback + 10.0
+            add_projectile("data/entities/projectiles/fire_ext_beam.xml")
+            add_projectile("data/entities/projectiles/fire_ext_beam.xml")
+            add_projectile("data/entities/projectiles/fire_ext_beam.xml")
+            add_projectile("data/entities/projectiles/fire_ext_beam.xml")
+            add_projectile("data/entities/projectiles/fire_ext_beam.xml")
+            add_projectile("data/entities/projectiles/fire_ext_beam.xml")
+			shot_effects.recoil_knockback = shot_effects.recoil_knockback + 2.0
+			c.spread_degrees = c.spread_degrees + 45.0
         end,
     },
 }
