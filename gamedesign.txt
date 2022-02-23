@@ -1,0 +1,38 @@
+ME WHEN SIRMOLE
+
+ANIMALS
+- stalker [sirmole]
+- hoverfish [sirmole]
+- gasopod [sirmole]
+- crashfish? [sirmole]
+- dune shark [sirmole]
+- crabsnake [sirmole]
+
+BOSSES
+- reaper levi
+- sea dragon levi
+- ghost levi (parallel worlds + grand reef?) (replace pw bosses)
+- reefback (very high health, basically just a testing meatbag thing yk)
+
+BIOMES
+- finish kelp forest
+- grassy plateu, grassy plateu water
+- purple mushroom cave thing
+
+ITEMS/PERKS/PICKUPS/SPELLS
+- fire resistent suit pickup perk (idk where)
+- seaglide [copium]
+- knife [anyone]
+
+
+BLUEPRINTS
+- knife (kelp forest) [gustavo]
+- seaglide (safe shallows, kelp forest) [gustavo]
+
+
+OTHER
+- funky hud
+- fix creepvine [copium?]
+- fix creepvine sprite [copium]
+- fix AIR [not sirmole :)]
+- ending
