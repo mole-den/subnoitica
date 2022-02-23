@@ -1,9 +1,9 @@
-<Entity tags="scanner,hittable,item_physics">
+<Entity tags="fragment_base,item_physics">
 	<!--<BookComponent>
 	</BookComponent>-->
 
 	<UIInfoComponent
-		name="Scanner"
+		name="Fragment"
 	></UIInfoComponent>
 
 	<PhysicsBodyComponent 
@@ -23,7 +23,7 @@
 	<PhysicsImageShapeComponent 
 		body_id="1"
 		centered="1"
-		image_file="data/entities/items/pda/pda.png"
+		image_file="data/entities/fragments/fragment.png"
 		material="rock_box2d_hard"
 	></PhysicsImageShapeComponent>
 
@@ -48,10 +48,10 @@
 		max_child_items="0"
 		is_pickable="1"
 		is_equipable_forced="1"
-		ui_sprite="data/entities/items/scanner/scanner.png"
+		ui_sprite="data/entities/fragments/fragment.png"
 		preferred_inventory="QUICK"
-		item_name="Scanner"
-		ui_description=""
+		item_name="Fragment"
+		ui_description="You should not be reading this."
 	></ItemComponent>
   
 	<SpriteComponent
@@ -59,7 +59,7 @@
 		_enabled="0"
 		offset_x="4"
 		offset_y="4"
-		image_file="data/entities/items/scanner/scanner_in_hand.png"
+		image_file="data/entities/fragments/fragment_in_hand.png"
 	></SpriteComponent>
 
 	<HitboxComponent 
@@ -82,7 +82,7 @@
 	
 	<ParticleEmitterComponent 
 		_tags="enabled_in_world,enabled_in_hand"
-		emitted_material_name="spark_blue"
+		emitted_material_name="spark_yellow"
 		offset.x="0"
 		offset.y="0"
 		x_pos_offset_min="0"
@@ -114,24 +114,11 @@
 	</ParticleEmitterComponent>
 	
 	<AbilityComponent
-		ui_name="PDA"
+		ui_name="Fragment"
 		throw_as_item="1"
 		><gun_config
 			deck_capacity="0"
 		></gun_config>
 	</AbilityComponent>
-
-	<CollisionTriggerComponent
-    width="60"
-    height="20" 
-    required_tag="fragment"
-    destroy_this_entity_when_triggered="0"
-    >
-  </CollisionTriggerComponent>
-
-  <LuaComponent
-    script_collision_trigger_hit="mods/subnoitica/data/entities/items/scanner/scan.lua"
-    >
-  </LuaComponent>
 
 </Entity>

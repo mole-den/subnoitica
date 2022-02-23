@@ -16,19 +16,15 @@ function OnModPostInit()
 end
 
 function OnPlayerSpawned( player_entity )
-	Moulding()
+	
 end
 
 function OnWorldPostUpdate()
-	Moulding()
+
 end
 
 function OnPlayerDied()
 	print("dead")
-end
-
-function Moulding()
-	
 end
 
 ModMagicNumbersFileAdd( "mods/subnoitica/files/magic_numbers.xml" ) 

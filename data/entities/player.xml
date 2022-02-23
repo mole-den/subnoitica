@@ -14,6 +14,7 @@
    <Entity name="inventory_quick">
 
       <Entity><Base file="data/entities/items/pda/pda.xml"></Entity>
+      <Entity><Base file="data/entities/items/pda/pda.xml"></Entity>
 
   </Entity>
   <Entity name="inventory_full"/>

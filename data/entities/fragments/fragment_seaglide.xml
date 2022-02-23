@@ -1,0 +1,23 @@
+<Entity
+    tags="fragment_seaglide,item_physics"
+    name="Seaglide Fragment"
+    >
+
+	<Base file="data/entities/fragments/fragment_base.xml">
+		<UIInfoComponent
+			name="Seaglide Fragment"
+			>
+		</UIInfoComponent>
+		
+		<ItemComponent
+			item_name="Seaglide Fragment"
+			ui_description=""
+			>
+		</ItemComponent>
+		
+		<AbilityComponent
+			ui_name="Seaglide Fragment"
+			>
+		</AbilityComponent>
+	</Base>
+</Entity>
