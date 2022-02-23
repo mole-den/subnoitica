@@ -22,6 +22,18 @@
 		color="ffccb67f" >
 	</Biome>
 
+	<Biome
+		biome_filename="data/biome/kelp_forest.xml"
+		height_index="0"
+		color="ff009e12">
+	</Biome>
+	
+	<Biome
+		biome_filename="data/biome/kelp_forest_open.xml"
+		height_index="0"
+		color="ff00c116">
+	</Biome>
+
 	<!-- index is between 0 and 10 -->
 
   	<!-- ground layer -->
