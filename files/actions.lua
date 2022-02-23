@@ -8,7 +8,7 @@ local to_insert = {
         spawn_level        = "",
         spawn_probability  = "",
         price              = 10,
-        mana               = 1,
+        mana               = 0,
         max_uses           = 1000,
         action = function()
             add_projectile("data/entities/projectiles/fire_ext_beam.xml")
@@ -19,6 +19,20 @@ local to_insert = {
             add_projectile("data/entities/projectiles/fire_ext_beam.xml")
 			shot_effects.recoil_knockback = shot_effects.recoil_knockback + 7.5
 			c.spread_degrees = c.spread_degrees + 45.0
+        end,
+    },
+    {
+        id                 = "SEAGLIDE",
+        name               = "Seaglide",
+        description        = "Provides fast underwater travel",
+        sprite             = "data/ui_gfx/gun_actions/subnoitica_seaglide.png",
+        type               = ACTION_TYPE_UTILITY,
+        spawn_level        = "",
+        spawn_probability  = "",
+        price              = 10,
+        mana               = 0,
+        action = function()
+
         end,
     },
 }
