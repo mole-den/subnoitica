@@ -110,6 +110,28 @@
     </Graphics>
   </CellData>
 
+  <CellData
+	name="rock_static_creepvine"
+	ui_name="Rock"
+	tags="[static],[corrodible],[meltable_to_lava],[alchemy],[solid],[earth]"
+	burnable="0"
+	density="10"
+	cell_type="liquid"
+	wang_color="ff267f00"
+	liquid_sand="1"
+	liquid_static="1"
+	on_fire="0"
+	gfx_glow="50"
+	hp="60000" 
+	platform_type="1"
+	>
+    <Graphics
+	texture_file="data/materials_gfx/creepvine_rock.png"
+	color="ff145014"
+	>
+    </Graphics>
+  </CellData>
+
    <CellData
 	name="water"
 	ui_name="$mat_water"
