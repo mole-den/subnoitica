@@ -14,10 +14,18 @@ BOSSES
 - ghost levi (parallel worlds + grand reef?) (replace pw bosses)
 - reefback (very high health, basically just a testing meatbag thing yk)
 
-BIOMES
+BIOMES [sirmole], make pretty [copium]
 - finish kelp forest
 - grassy plateu, grassy plateu water
 - purple mushroom cave thing
+- grand reef
+- deep grand reef
+- shore island
+- above water island
+- below water island
+- GUN
+- aurora biomes
+- prawn suit bay
 
 ITEMS/PERKS/PICKUPS/SPELLS
 - fire resistent suit pickup perk (idk where)

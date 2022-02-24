@@ -1,4 +1,4 @@
-<Entity tags="fragment_base,item_physics">
+<Entity tags="fragment,fragment_base,item_physics">
 	<!--<BookComponent>
 	</BookComponent>-->
 

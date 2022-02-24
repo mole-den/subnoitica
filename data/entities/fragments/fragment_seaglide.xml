@@ -1,5 +1,5 @@
 <Entity
-    tags="fragment_seaglide,item_physics"
+    tags="fragment,fragment_seaglide,item_physics"
     name="Seaglide Fragment"
     >
 
