@@ -16,7 +16,7 @@ function OnModPostInit()
 end
 
 function OnPlayerSpawned( player_entity )
-	
+	GlobalsSetValue('fragment_seaglide_count', 0)
 end
 
 function OnWorldPostUpdate()
