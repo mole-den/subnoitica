@@ -7,9 +7,9 @@ function collision_trigger(colliding_entity_id)
     if (EntityHasTag(colliding_entity_id, "mortal")) then
         return
     elseif (EntityHasTag(colliding_entity_id, "fragment_seaglide")) then
-        local fragment_count = tonumber(GlobalsGetValue('fragment_seaglide_count'))
+        local fragment_seaglide_count = tonumber(GlobalsGetValue('fragment_seaglide_count'))
         if GameHasFlagRun("has_seaglide") == false then
-            if fragment_count == 2 then
+            if fragment_seaglide_count == 2 then
                 -- spawn seaglide
 
                 GlobalsSetValue('fragment_seaglide_count', 0)
@@ -17,7 +17,7 @@ function collision_trigger(colliding_entity_id)
                 GameAddFlagRun("has_seaglide")
                 return
             else
-                fragment_count = fragment_count + 1
+                fragment_seaglide_count = fragment_seaglide_count + 1
                 GlobalsSetValue('fragment_seaglide_count', fragment_count)
             end
 
