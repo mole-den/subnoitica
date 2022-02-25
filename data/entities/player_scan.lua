@@ -16,35 +16,32 @@ local fragment_handlers = {
 };
 
 function collision_trigger(colliding_entity_id)
-    local entity_id = EntityGetName()
-    local x, y = EntityGetTransform()
-    if (EntityHasTag(colliding_entity_id, "mortal")) then
+    if (EntityHasTag(colliding_entity_id, "fragment") == false) then
         return
-    elseif (EntityHasTag(colliding_entity_id, "fragment")) then
-        local fragment_type = (string.gmatch(string.gmatch((string.gmatch(EntityGetTags(colliding_entity_id),
-            'fragment_[^,| ]+'))(), '_[^,| ]+')(), '[^_]+')())
-        local all_fragment_counts = json.decode(GlobalsGetValue('fragments'))
-        local fragment_count = all_fragment_counts[fragment_type]
-        if (fragment_count == nil) then
-            fragment_count = 0
-        end
-        if GameHasFlagRun("has_" .. fragment_type) == false then
-            if fragment_count == (fragment_handlers[fragment_type].requiredCount - 1) then
-                all_fragment_counts[fragment_type] = 0
-                GlobalsSetValue('fragments', json.encode(all_fragment_counts))
-                fragment_handlers[fragment_type].onCollect(false)
-                GameAddFlagRun("has_" .. fragment_type)
-                return
-            else
-                all_fragment_counts[fragment_type] = fragment_count + 1
-                GlobalsSetValue('fragments', json.encode(all_fragment_counts))
-            end
-
-        elseif GameHasFlagRun("has_" .. fragment_type) == true then
-            fragment_handlers[fragment_type].onCollect(true)
-        end
-        EntityKill(colliding_entity_id)
     end
+    local fragment_type = (string.gmatch(string.gmatch((string.gmatch(EntityGetTags(colliding_entity_id),
+        'fragment_[^,| ]+'))(), '_[^,| ]+')(), '[^_]+')())
+    local all_fragment_counts = json.decode(GlobalsGetValue('fragments'))
+    if (all_fragment_counts[fragment_type] == nil) then
+        all_fragment_counts[fragment_type] = 0
+    end
+
+    if GameHasFlagRun("has_" .. fragment_type) == false then
+        if all_fragment_counts[fragment_type] == (fragment_handlers[fragment_type].requiredCount - 1) then
+            all_fragment_counts[fragment_type] = 0
+            GlobalsSetValue('fragments', json.encode((json.decode(GlobalsGetValue('fragments')))))
+            fragment_handlers[fragment_type].onCollect(false)
+            GameAddFlagRun("has_" .. fragment_type)
+            return
+        else
+            all_fragment_counts[fragment_type] = all_fragment_counts[fragment_type] + 1
+            GlobalsSetValue('fragments', json.encode(all_fragment_counts))
+        end
+
+    elseif GameHasFlagRun("has_" .. fragment_type) == true then
+        fragment_handlers[fragment_type].onCollect(true)
+    end
+    EntityKill(colliding_entity_id)
 end
 
 function has_unlocked_rewards(reward_chance, reward_tier)
