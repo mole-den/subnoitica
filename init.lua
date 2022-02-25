@@ -16,10 +16,7 @@ function OnModPostInit()
 end
 
 function OnPlayerSpawned( player_entity )
-	GlobalsSetValue('fragments', json.encode({
-		seaglide=0,
-		knife=0
-	}))
+	GlobalsSetValue('fragments', '')
 end
 
 function OnWorldPostUpdate()

@@ -2,27 +2,35 @@ dofile_once("data/scripts/lib/utilities.lua")
 
 local json = dofile_once("mods/subnoitica/lib/json.lua")
 local fragment_handlers = {
-    seaglide = function (already_unlocked)
-        if (already_unlocked) then 
-            has_unlocked_rewards(10, 2)
-            return
+    seaglide = {
+        requiredCount = 3,
+        onCollect = function(already_unlocked)
+            if (already_unlocked) then
+                has_unlocked_rewards(10, 2)
+                return
+            end
+            GamePrint("Seaglide acquired!")
         end
-        GamePrint("Seaglide acquired!") 
-    end
+
+    }
 };
 
 function collision_trigger(colliding_entity_id)
     local entity_id = EntityGetName()
     local x, y = EntityGetTransform()
     GamePrint('collision_trigger')
-    if (EntityHasTag(colliding_entity_id, "mortal")) then return
+    if (EntityHasTag(colliding_entity_id, "mortal")) then
+        return
     elseif (EntityHasTag(colliding_entity_id, "fragment")) then
-        local fragment_type = (string.gmatch(string.gmatch((string.gmatch(EntityGetTags(colliding_entity_id), 'fragment_[^,| ]+'))(), '_[^,| ]+')()
-        , '[^_]+')())
+        local fragment_type = (string.gmatch(string.gmatch((string.gmatch(EntityGetTags(colliding_entity_id),
+            'fragment_[^,| ]+'))(), '_[^,| ]+')(), '[^_]+')())
         local all_fragment_counts = json.decode(GlobalsGetValue('fragments'))
         local fragment_count = all_fragment_counts[fragment_type]
+        if (fragment_count == nil) then
+            fragment_count = 0
+        end
         if GameHasFlagRun("has_" .. fragment_type) == false then
-            if fragment_count == 2 then
+            if fragment_count == (fragment_handlers[fragment_type].requiredCount - 1) then
                 all_fragment_counts[fragment_type] = 0
                 GlobalsSetValue('fragments', json.encode(all_fragment_counts))
                 fragment_handlers[fragment_type](false)
