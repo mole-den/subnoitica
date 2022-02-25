@@ -4,7 +4,7 @@ ModMaterialsFileAdd("mods/subnoitica/files/materials.xml")
 
 
 local nxml = dofile_once("mods/subnoitica/lib/nxml.lua")
-
+local json = dofile_once('mods/subnoitica/lib/json.lua')
 BiomeMapLoadImage( 0, 0, "mods/subnoitica/files/biome_map.png" )
 
 function OnModInit()
@@ -16,7 +16,10 @@ function OnModPostInit()
 end
 
 function OnPlayerSpawned( player_entity )
-	GlobalsSetValue('fragment_seaglide_count', 0)
+	GlobalsSetValue('fragments', json.encode({
+		seaglide=0,
+		knife=0
+	}))
 end
 
 function OnWorldPostUpdate()
