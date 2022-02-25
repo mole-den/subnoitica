@@ -59,7 +59,7 @@ g_props =
 }
 
 function init( x, y, w, h )
-
+	LoadPixelScene( "data/biome_impl/grassy_plateau.png", "", x, y, "", true )
 end
 
 function spawn_fish(x, y)

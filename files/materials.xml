@@ -132,6 +132,28 @@
     </Graphics>
   </CellData>
 
+  <CellData
+	name="rock_static_grassy"
+	ui_name="Rock"
+	tags="[static],[corrodible],[meltable_to_lava],[alchemy],[solid],[earth]"
+	burnable="0"
+	density="10"
+	cell_type="liquid"
+	wang_color="ff771620"
+	liquid_sand="1"
+	liquid_static="1"
+	on_fire="0"
+	gfx_glow="100"
+	hp="1000" 
+	platform_type="1"
+	>
+    <Graphics
+	texture_file="data/materials_gfx/grassy_grass.png"
+	color="ff145014"
+	>
+    </Graphics>
+  </CellData>
+
    <CellData
 	name="water"
 	ui_name="$mat_water"
