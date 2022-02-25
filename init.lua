@@ -16,7 +16,7 @@ function OnModPostInit()
 end
 
 function OnPlayerSpawned( player_entity )
-	GlobalsSetValue('fragments', '')
+	GlobalsSetValue('fragments', '{}')
 end
 
 function OnWorldPostUpdate()

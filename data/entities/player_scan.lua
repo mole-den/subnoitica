@@ -18,7 +18,6 @@ local fragment_handlers = {
 function collision_trigger(colliding_entity_id)
     local entity_id = EntityGetName()
     local x, y = EntityGetTransform()
-    GamePrint('collision_trigger')
     if (EntityHasTag(colliding_entity_id, "mortal")) then
         return
     elseif (EntityHasTag(colliding_entity_id, "fragment")) then
@@ -33,7 +32,7 @@ function collision_trigger(colliding_entity_id)
             if fragment_count == (fragment_handlers[fragment_type].requiredCount - 1) then
                 all_fragment_counts[fragment_type] = 0
                 GlobalsSetValue('fragments', json.encode(all_fragment_counts))
-                fragment_handlers[fragment_type](false)
+                fragment_handlers[fragment_type].onCollect(false)
                 GameAddFlagRun("has_" .. fragment_type)
                 return
             else
@@ -42,7 +41,7 @@ function collision_trigger(colliding_entity_id)
             end
 
         elseif GameHasFlagRun("has_" .. fragment_type) == true then
-            fragment_handlers[fragment_type](true)
+            fragment_handlers[fragment_type].onCollect(true)
         end
         EntityKill(colliding_entity_id)
     end
