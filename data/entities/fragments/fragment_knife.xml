@@ -1,0 +1,23 @@
+<Entity
+    tags="fragment,fragment_knife,item_physics"
+    name="Knife Fragment"
+    >
+
+    <Base file="data/entities/fragments/fragment_base.xml">
+        <UIInfoComponent
+            name="Knife Fragment"
+            >
+        </UIInfoComponent>
+       
+        <ItemComponent
+            item_name="Knife Fragment"
+            ui_description=""
+            >
+        </ItemComponent>
+       
+        <AbilityComponent
+            ui_name="Knife Fragment"
+            >
+        </AbilityComponent>
+    </Base>
+</Entity>
