@@ -93,88 +93,8 @@
 	</PhysicsImageShapeComponent>
 	<PhysicsImageShapeComponent
 		body_id="110"
-		offset_x="-3"
-		offset_y="59"
-		image_file="data/props_gfx/physics_creepvine_stalk.png"
-		material="fungus_loose"
-		>
-	</PhysicsImageShapeComponent>
-	<PhysicsImageShapeComponent
-		body_id="111"
-		offset_x="-3"
-		offset_y="62"
-		image_file="data/props_gfx/physics_creepvine_stalk.png"
-		material="fungus_loose"
-		>
-	</PhysicsImageShapeComponent>
-	<PhysicsImageShapeComponent
-		body_id="112"
-		offset_x="-3"
-		offset_y="68"
-		image_file="data/props_gfx/physics_creepvine_stalk.png"
-		material="fungus_loose"
-		>
-	</PhysicsImageShapeComponent>
-	<PhysicsImageShapeComponent
-		body_id="113"
-		offset_x="-3"
-		offset_y="74"
-		image_file="data/props_gfx/physics_creepvine_stalk.png"
-		material="fungus_loose"
-		>
-	</PhysicsImageShapeComponent>
-	<PhysicsImageShapeComponent
-		body_id="114"
-		offset_x="-3"
-		offset_y="80"
-		image_file="data/props_gfx/physics_creepvine_stalk.png"
-		material="fungus_loose"
-		>
-	</PhysicsImageShapeComponent>
-	<PhysicsImageShapeComponent
-		body_id="115"
-		offset_x="-3"
-		offset_y="86"
-		image_file="data/props_gfx/physics_creepvine_stalk.png"
-		material="fungus_loose"
-		>
-	</PhysicsImageShapeComponent>
-	<PhysicsImageShapeComponent
-		body_id="116"
-		offset_x="-3"
-		offset_y="92"
-		image_file="data/props_gfx/physics_creepvine_stalk.png"
-		material="fungus_loose"
-		>
-	</PhysicsImageShapeComponent>
-	<PhysicsImageShapeComponent
-		body_id="117"
-		offset_x="-3"
-		offset_y="98"
-		image_file="data/props_gfx/physics_creepvine_stalk.png"
-		material="fungus_loose"
-		>
-	</PhysicsImageShapeComponent>
-	<PhysicsImageShapeComponent
-		body_id="118"
-		offset_x="-3"
-		offset_y="104"
-		image_file="data/props_gfx/physics_creepvine_stalk.png"
-		material="fungus_loose"
-		>
-	</PhysicsImageShapeComponent>
-	<PhysicsImageShapeComponent
-		body_id="119"
-		offset_x="-3"
-		offset_y="110"
-		image_file="data/props_gfx/physics_creepvine_stalk.png"
-		material="fungus_loose"
-		>
-	</PhysicsImageShapeComponent>
-	<PhysicsImageShapeComponent
-		body_id="120"
 		offset_x="-4"
-		offset_y="116"
+		offset_y="59"
 		image_file="data/props_gfx/physics_creepvine_foot.png"
 		material="fungus_loose"
 		>
@@ -228,61 +148,6 @@
 	></PhysicsJoint2MutatorComponent>
 	<PhysicsJoint2MutatorComponent
 		joint_id="10"
-		motor_speed="-0"
-		motor_max_torque="10"
-	></PhysicsJoint2MutatorComponent>
-	<PhysicsJoint2MutatorComponent
-		joint_id="11"
-		motor_speed="-0"
-		motor_max_torque="10"
-	></PhysicsJoint2MutatorComponent>
-	<PhysicsJoint2MutatorComponent
-		joint_id="12"
-		motor_speed="-0"
-		motor_max_torque="10"
-	></PhysicsJoint2MutatorComponent>
-	<PhysicsJoint2MutatorComponent
-		joint_id="13"
-		motor_speed="-0"
-		motor_max_torque="10"
-	></PhysicsJoint2MutatorComponent>
-	<PhysicsJoint2MutatorComponent
-		joint_id="14"
-		motor_speed="-0"
-		motor_max_torque="10"
-	></PhysicsJoint2MutatorComponent>
-	<PhysicsJoint2MutatorComponent
-		joint_id="15"
-		motor_speed="-0"
-		motor_max_torque="10"
-	></PhysicsJoint2MutatorComponent>
-	<PhysicsJoint2MutatorComponent
-		joint_id="16"
-		motor_speed="-0"
-		motor_max_torque="10"
-	></PhysicsJoint2MutatorComponent>
-	<PhysicsJoint2MutatorComponent
-		joint_id="17"
-		motor_speed="-0"
-		motor_max_torque="10"
-	></PhysicsJoint2MutatorComponent>
-	<PhysicsJoint2MutatorComponent
-		joint_id="18"
-		motor_speed="-0"
-		motor_max_torque="10"
-	></PhysicsJoint2MutatorComponent>
-	<PhysicsJoint2MutatorComponent
-		joint_id="19"
-		motor_speed="-0"
-		motor_max_torque="10"
-	></PhysicsJoint2MutatorComponent>
-	<PhysicsJoint2MutatorComponent
-		joint_id="20"
-		motor_speed="-0"
-		motor_max_torque="10"
-	></PhysicsJoint2MutatorComponent>
-	<PhysicsJoint2MutatorComponent
-		joint_id="21"
 		motor_speed="-0"
 		motor_max_torque="10"
 	></PhysicsJoint2MutatorComponent>
@@ -398,134 +263,13 @@
 		break_distance="5"
 		>
 	</PhysicsJoint2Component>
-	<PhysicsJoint2Component
-		type="REVOLUTE_JOINT"
-		joint_id="11"
-		offset_x="0"
-		offset_y="68"
-		body1_id="110"
-		body2_id="111"
-		break_force="10"
-		break_distance="5"
-		>
-	</PhysicsJoint2Component>
-	<PhysicsJoint2Component
-		type="REVOLUTE_JOINT"
-		joint_id="12"
-		offset_x="0"
-		offset_y="74"
-		body1_id="111"
-		body2_id="112"
-		break_force="10"
-		break_distance="5"
-		>
-	</PhysicsJoint2Component>
-	<PhysicsJoint2Component
-		type="REVOLUTE_JOINT"
-		joint_id="13"
-		offset_x="0"
-		offset_y="80"
-		body1_id="112"
-		body2_id="113"
-		break_force="10"
-		break_distance="5"
-		>
-	</PhysicsJoint2Component>
-	<PhysicsJoint2Component
-		type="REVOLUTE_JOINT"
-		joint_id="14"
-		offset_x="0"
-		offset_y="86"
-		body1_id="113"
-		body2_id="114"
-		break_force="10"
-		break_distance="5"
-		>
-	</PhysicsJoint2Component>
-	<PhysicsJoint2Component
-		type="REVOLUTE_JOINT"
-		joint_id="15"
-		offset_x="0"
-		offset_y="92"
-		body1_id="114"
-		body2_id="115"
-		break_force="10"
-		break_distance="5"
-		>
-	</PhysicsJoint2Component>
-	<PhysicsJoint2Component
-		type="REVOLUTE_JOINT"
-		joint_id="16"
-		offset_x="0"
-		offset_y="98"
-		body1_id="115"
-		body2_id="116"
-		break_force="10"
-		break_distance="5"
-		>
-	</PhysicsJoint2Component>
-	<PhysicsJoint2Component
-		type="REVOLUTE_JOINT"
-		joint_id="17"
-		offset_x="0"
-		offset_y="104"
-		body1_id="116"
-		body2_id="117"
-		break_force="10"
-		break_distance="5"
-		>
-	</PhysicsJoint2Component>
-	<PhysicsJoint2Component
-		type="REVOLUTE_JOINT"
-		joint_id="18"
-		offset_x="0"
-		offset_y="110"
-		body1_id="117"
-		body2_id="118"
-		break_force="10"
-		break_distance="5"
-		>
-	</PhysicsJoint2Component>
-	<PhysicsJoint2Component
-		type="REVOLUTE_JOINT"
-		joint_id="19"
-		offset_x="0"
-		offset_y="116"
-		body1_id="118"
-		body2_id="119"
-		break_force="10"
-		break_distance="5"
-		>
-	</PhysicsJoint2Component>
-	<PhysicsJoint2Component
-		type="REVOLUTE_JOINT"
-		joint_id="20"
-		offset_x="0"
-		offset_y="122"
-		body1_id="119"
-		body2_id="120"
-		break_force="10"
-		break_distance="5"
-		>
-	</PhysicsJoint2Component>
-	<PhysicsJoint2Component
-		type="REVOLUTE_JOINT"
-		joint_id="21"
-		offset_x="0"
-		offset_y="128"
-		body1_id="120"
-		body2_id="121"
-		break_force="10"
-		break_distance="5"
-		>
-	</PhysicsJoint2Component>
 
 	<!-- joint to ground -->
 	<PhysicsJoint2Component
 		type="REVOLUTE_JOINT_ATTACH_TO_NEARBY_SURFACE"
 		offset_x="0"
-		offset_y="137"
-		body1_id="121"
+		offset_y="71"
+		body1_id="110"
 		break_force="35"
 		break_distance="8"
 		ray_x="0"
@@ -544,7 +288,7 @@
 		kill_when_empty="1"
 		>
 		<count_per_material_type>
-			<Material material="creepvine_juice" count="1200"  />
+			<Material material="blood_fungi" count="1200"  />
 		</count_per_material_type>
 	</MaterialInventoryComponent>
 
