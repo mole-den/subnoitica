@@ -33,7 +33,7 @@
 	
 	<HotspotComponent 
         _tags="shoot_pos" 
-        offset.x="-4" 
+        offset.x="10" 
         offset.y="0.5" >
     </HotspotComponent>
 	
