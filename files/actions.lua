@@ -34,6 +34,10 @@ local to_insert = {
         action = function()
             local player = EntityGetWithTag( "player_unit" )[1]
 			local pos_x, pos_y = EntityGetTransform( player )
+            local did_hit = (RaytraceSurfaces( pos_x - 2, pos_y - 2, (pos_x + 2), (pos_y + 2)))
+            if did_hit then return end
+            did_hit = RaytraceSurfacesAndLiquiform( pos_x - 2, pos_y - 2, (pos_x + 2), (pos_y + 2))
+            if not did_hit then return end
 			local mouse_x, mouse_y = ComponentGetValue2(EntityGetFirstComponentIncludingDisabled(player, "ControlsComponent"), "mMousePosition")
 			if (mouse_x == nil or mouse_y == nil) then return end
 			local aim_x = mouse_x - pos_x
