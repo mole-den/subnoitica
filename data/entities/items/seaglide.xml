@@ -47,7 +47,7 @@
 		<SpriteComponent 
 			_tags="item,enabled_in_world,enabled_in_hand" 
 			alpha="1" 
-			offset_x="10"
+			offset_x="5"
 			offset_y="10"
 			has_special_scale="1"
 			special_scale_x="0.6"
