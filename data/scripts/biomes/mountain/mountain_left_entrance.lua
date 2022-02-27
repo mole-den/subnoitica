@@ -141,4 +141,5 @@ end
 
 function spawn_fishe_items(x, y)
 	EntityLoad( "data/entities/items/fire_ext.xml", x, y )
+	EntityLoad( "data/entities/items/seaglide.xml", x-20, y )
 end
