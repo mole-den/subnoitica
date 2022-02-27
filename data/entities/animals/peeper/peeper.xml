@@ -109,4 +109,14 @@
         >
     </CameraBoundComponent>
 
+  <MaterialInventoryComponent 
+    _tags="enabled_in_world,enabled_in_hand"
+    drop_as_item="0" 
+    leak_on_damage_percent="0"
+     >
+    <count_per_material_type>
+    <Material material="meat" count="400"  />
+    </count_per_material_type>
+  </MaterialInventoryComponent>
+
 </Entity>

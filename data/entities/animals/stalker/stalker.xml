@@ -14,7 +14,7 @@
 		acceleration="0.5"
 		gravity="4"
 		tail_gravity="30"
-		part_distance="14"
+		part_distance="9"
 		ground_check_offset="1"
 		hitbox_radius="5"
 		target_kill_radius="7"
@@ -38,6 +38,14 @@
 		give_up_time_frames="250"
 		>
 	</WormAIComponent>
+
+  <CellEaterComponent
+    limited_materials = "1"
+    materials = "sand,sandstone,rock_static_creepvine,rock_static_coral,rock_static_glow,meat,coral,coral_blue,coral_green"
+    _tags="cell_eater"
+    eat_probability="5"
+    radius="5" >
+  </CellEaterComponent>
 
 	<DamageModelComponent 
 		_enabled="1" 
@@ -97,7 +105,7 @@
 		alpha="1" 
 		image_file="data/entities/animals/stalker/body.png" 
 		next_rect_animation="" 
-		offset_x="18" 
+		offset_x="7" 
 		offset_y="10" 
 		update_transform="0"
 		 >
@@ -108,7 +116,7 @@
 		alpha="1" 
 		image_file="data/entities/animals/stalker/body2.png" 
 		next_rect_animation="" 
-		offset_x="18" 
+		offset_x="7" 
 		offset_y="10" 
 		update_transform="0"
 		 >
@@ -119,7 +127,7 @@
 		alpha="1" 
 		image_file="data/entities/animals/stalker/body3.png" 
 		next_rect_animation="" 
-		offset_x="18" 
+		offset_x="7" 
 		offset_y="10" 
 		update_transform="0"
 		 >
@@ -130,9 +138,8 @@
 		alpha="1" 
 		image_file="data/entities/animals/stalker/tail.png" 
 		next_rect_animation="" 
-		offset_x="18" 
 		offset_x="7" 
-		offset_y="10" 
+		offset_y="9" 
 		update_transform="0"
 		 >
 	</SpriteComponent>
