@@ -56,6 +56,19 @@ local to_insert = {
 			(aim_x/len*force_x), (aim_y/len*force_y))
         end,
     },
+    {
+        id                 = "SURVIVAL_KNIFE",
+        name               = "Survival Knife",
+        description        = "Attack with your survival knife",
+        sprite             = "data/ui_gfx/gun_actions/survival_knife.png",
+        type               = ACTION_TYPE_PROJECTILE,
+        spawn_level        = "",
+        spawn_probability  = "",
+        price              = 10,
+        mana               = 0,
+        action = function()
+        end,
+    },
 }
 
 
