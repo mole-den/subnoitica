@@ -1,5 +1,22 @@
 <Materials>
 
+
+  <CellData
+  	name="air"
+	ui_name="$mat_air"
+	tags="[static],[alchemy]"
+	wang_color="ff000042"
+  	>
+  </CellData>
+
+  <CellData
+  	name="offbrand_air"
+	ui_name="$mat_air"
+	tags="[static],[alchemy]"
+	wang_color="ff000001"
+  	>
+  </CellData>
+
   <CellData
 	name="coral"
 	ui_name="Coral"

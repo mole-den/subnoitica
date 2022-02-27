@@ -17,6 +17,7 @@ end
 
 function OnPlayerSpawned( player_entity )
 	GlobalsSetValue('fragments', '{}')
+	ConvertMaterialEverywhere( CellFactory_GetType( "air" ), CellFactory_GetType( "water" ) )
 end
 
 function OnWorldPostUpdate()

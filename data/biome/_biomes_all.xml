@@ -52,6 +52,24 @@
 		color="ff808080">
 	</Biome>
 
+	<Biome
+		biome_filename="data/biome/island_shore_left.xml"
+		height_index="0"
+		color="ff11b0fc">
+	</Biome>
+
+	<Biome
+		biome_filename="data/biome/island_shore_middle.xml"
+		height_index="0"
+		color="ff0fa0e2">
+	</Biome>
+
+	<Biome
+		biome_filename="data/biome/island_shore_right.xml"
+		height_index="0"
+		color="ff0f98d8">
+	</Biome>
+
 	<!-- index is between 0 and 10 -->
 
   	<!-- ground layer -->

@@ -29,13 +29,17 @@ BIOMES [sirmole], make pretty [copium]
 
 ITEMS/PERKS/PICKUPS/SPELLS
 - fire resistent suit pickup perk (idk where)
-- seaglide [copium]
+- seaglide [copium, gustavo]
 - knife [anyone]
+- gravity gun []
+- flippers []
 
 
 BLUEPRINTS
-- knife (kelp forest) [gustavo]
-- seaglide (safe shallows, kelp forest) [gustavo]
+- knife (safe shallows, kelp forest) [gustavo]
+- seaglide (kelp forest) [gustavo]
+- flippers (safe shallows, grassy plateau), stackable perk thing? []
+- gravity gun (above ground island?) []
 
 
 OTHER
@@ -43,4 +47,4 @@ OTHER
 - fix creepvine [copium?]
 - fix creepvine sprite [copium]
 - fix AIR [not sirmole :)]
-- ending
+- ending [sirmole]

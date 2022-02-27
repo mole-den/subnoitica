@@ -1,15 +1,20 @@
 <Mod
 name="Subnoitica"
 description="
-fishe.
+A total conversion mod based around the popular underwater survival game Subnautica.
 
 Github: https://github.com/mole-den/subnoitica
-Discord: https://discord.gg/JuRC6FqXkb
+Discord 1: https://discord.gg/mmMxjDBGnS (for the mod itself)
+Discord 2: https://discord.gg/JuRC6FqXkb (for epic gaming)
 
-Developers
-- Master of Copium
-- Gustavo
-- SirMole (me)
+> Developers
+Master of Copium (Sprites, Items, Spells)
+Gustavo (Scripts, Fragments)
+SirMole (fishe and biom)
+TheOneTheOnlySpoopyBoi (Sprites)
+
+> Special Thanks
+
 
 "
 tags="total conversions, game modes, gameplay"
