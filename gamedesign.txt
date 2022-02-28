@@ -12,7 +12,7 @@ BOSSES
 - reaper levi
 - sea dragon levi
 - ghost levi (parallel worlds + grand reef?) (replace pw bosses)
-- reefback (very high health, basically just a testing meatbag thing yk)
+- reefback (very high health, basically just a testing meatbag thing yk)    #   is it really a boss though? probably better as just a regular super tanky enemy, possibly a physics enemy so you can stand on it -- copi
 
 BIOMES [sirmole], make pretty [copium]
 - finish kelp forest
@@ -23,9 +23,10 @@ BIOMES [sirmole], make pretty [copium]
 - shore island
 - above water island
 - below water island
-- GUN
 - aurora biomes
-- prawn suit bay
+
+Structure system
+- prawn suit bay                                                            #   is it going to be a perk? can we dynamically remove it with a keypress? how will we handle vehicles? -- copi
 
 ITEMS/PERKS/PICKUPS/SPELLS
 - fire resistent suit pickup perk (idk where)
@@ -33,6 +34,8 @@ ITEMS/PERKS/PICKUPS/SPELLS
 - knife [anyone]
 - gravity gun []
 - flippers []
+- GUN
+- tanks
 
 
 BLUEPRINTS
@@ -43,17 +46,20 @@ BLUEPRINTS
 
 
 OTHER
-- funky hud
+- funky hud                                                                 #   possible screenspace shader when wearing exosuit or in vehicle? -- copi
 - fix creepvine [copium?]
 - fix creepvine sprite [copium]
 - fix AIR [me when sirmole]
 - ending [sirmole]
 
-MATERIALS
+- avoid pick up issues with fish by instead
+adding to fake inventory with simple counters?                              #   -- copi
+
+MATERIALS                                                                   #   I can handle spriting -- copi
 - titanium
 - kyanite
 - gold
-- ion cube
+- ion cube                                                                  #   Please rename this from ion coom, save funny naming for mould -- copi
 - nickel
 - uranium
 
