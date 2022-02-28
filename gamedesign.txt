@@ -46,5 +46,16 @@ OTHER
 - funky hud
 - fix creepvine [copium?]
 - fix creepvine sprite [copium]
-- fix AIR [not sirmole :)]
+- fix AIR [me when sirmole]
 - ending [sirmole]
+
+MATERIALS
+- titanium
+- kyanite
+- gold
+- ion cube
+- nickel
+- uranium
+
+
+
