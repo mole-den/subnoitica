@@ -1,4 +1,4 @@
-<Entity tags="material,ion_coom,item_physics">
+<Entity tags="material,ion_cube,item_physics">
 	<!--<BookComponent>
 	</BookComponent>-->
 
@@ -23,7 +23,7 @@
 	<PhysicsImageShapeComponent 
 		body_id="1"
 		centered="1"
-		image_file="data/entities/materials/ion_coom.png"
+		image_file="data/entities/materials/ion_cube.png"
 		material="rock_box2d_hard"
 	></PhysicsImageShapeComponent>
 
@@ -48,7 +48,7 @@
 		max_child_items="0"
 		is_pickable="1"
 		is_equipable_forced="1"
-		ui_sprite="data/entities/materials/titanium.png"
+		ui_sprite="data/entities/materials/ion_cube.png"
 		preferred_inventory="QUICK"
 		item_name="Ion Cube"
 		ui_description="You should not be reading this."

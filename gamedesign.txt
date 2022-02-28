@@ -8,13 +8,13 @@ ANIMALS
 - dune shark [sirmole]
 - crabsnake [sirmole]
 
-BOSSES
-- reaper levi
-- sea dragon levi
+LEVIATHANS
+- reaper levi, boss, around aurora? below prawn suit bay?
+- sea dragon levi, boss, see complete biome map for spawn locations
 - ghost levi (parallel worlds + grand reef?) (replace pw bosses)
-- reefback (very high health, basically just a testing meatbag thing yk)    #   is it really a boss though? probably better as just a regular super tanky enemy, possibly a physics enemy so you can stand on it -- copi
+- reefback (very high health, basically just a testing meatbag thing yk), chonk, not a boss, should have physics (ty copi)
 
-BIOMES [sirmole], make pretty [copium]
+BIOMES [sirmole]
 - finish kelp forest
 - grassy plateu, grassy plateu water
 - purple mushroom cave thing
@@ -59,7 +59,7 @@ MATERIALS                                                                   #   
 - titanium
 - kyanite
 - gold
-- ion cube                                                                  #   Please rename this from ion coom, save funny naming for mould -- copi
+- ion cube                                                   
 - nickel
 - uranium
 
