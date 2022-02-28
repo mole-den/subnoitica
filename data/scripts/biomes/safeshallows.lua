@@ -6,6 +6,7 @@ dofile_once("data/scripts/biome_scripts.lua")
 RegisterSpawnFunction( 0xffffeedd, "init" )
 RegisterSpawnFunction( 0xffb4a00a, "spawn_fish" )
 RegisterSpawnFunction( 0xff9797e8, "spawn_fragments" )
+RegisterSpawnFunction( 0xffb4C072, "spawn_materials" )
 
 g_fish =
 {
@@ -43,6 +44,13 @@ g_fragments =
 		max_count	= 1,   
 		entity 	= "data/entities/fragments/fragment_seaglide.xml"
 	},
+
+}
+
+g_materails =
+{
+	
+
 
 }
 

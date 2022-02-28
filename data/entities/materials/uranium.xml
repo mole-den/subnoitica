@@ -1,9 +1,9 @@
-<Entity tags="material,titanium,item_physics">
+<Entity tags="material,uranium,item_physics">
 	<!--<BookComponent>
 	</BookComponent>-->
 
 	<UIInfoComponent
-		name="Titanium"
+		name="uranium"
 	></UIInfoComponent>
 
 	<PhysicsBodyComponent 
@@ -23,7 +23,7 @@
 	<PhysicsImageShapeComponent 
 		body_id="1"
 		centered="1"
-		image_file="data/entities/materials/titanium.png"
+		image_file="data/entities/materials/uranium.png"
 		material="rock_box2d_hard"
 	></PhysicsImageShapeComponent>
 
@@ -48,7 +48,7 @@
 		max_child_items="0"
 		is_pickable="1"
 		is_equipable_forced="1"
-		ui_sprite="data/entities/materials/titanium.png"
+		ui_sprite="data/entities/materials/uranium.png"
 		preferred_inventory="QUICK"
 		item_name="Titanium"
 		ui_description="You should not be reading this."
@@ -106,7 +106,7 @@
 	</ParticleEmitterComponent>
 	
 	<AbilityComponent
-		ui_name="Titanium"
+		ui_name="Uranium"
 		throw_as_item="1"
 		><gun_config
 			deck_capacity="0"
