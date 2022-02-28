@@ -22,21 +22,21 @@ function collision_trigger(colliding_entity_id)
     end
     local fragment_type = (string.gmatch(string.gmatch((string.gmatch(EntityGetTags(colliding_entity_id),
         'fragment_[^,| ]+'))(), '_[^,| ]+')(), '[^_]+')())
-    local all_fragment_counts = stringstore.open_store(stringstore.noita.variable_storage_components(
+    local store = stringstore.open_store(stringstore.noita.variable_storage_components(
         EntityGetWithTag("player_unit")[1])).fragments
         
-    if (all_fragment_counts[fragment_type] == nil) then
-        all_fragment_counts[fragment_type] = 0
+    if (store[fragment_type] == nil) then
+        store[fragment_type] = 0
     end
 
     if GameHasFlagRun("has_" .. fragment_type) == false then
-        if all_fragment_counts[fragment_type] == (fragment_handlers[fragment_type].requiredCount - 1) then
-            all_fragment_counts[fragment_type] = 0
+        if store[fragment_type] == (fragment_handlers[fragment_type].requiredCount - 1) then
+            store[fragment_type] = 0
             fragment_handlers[fragment_type].onCollect(false)
             GameAddFlagRun("has_" .. fragment_type)
             return
         else
-            all_fragment_counts[fragment_type] = all_fragment_counts[fragment_type] + 1
+            store[fragment_type] = store[fragment_type] + 1
         end
 
     elseif GameHasFlagRun("has_" .. fragment_type) == true then
