@@ -57,7 +57,7 @@ g_materails =
 		min_count	= 1,
 		max_count	= 1,   
 		entity 	= "data/entities/materials/titanium.xml"
-	}
+	},
 
 	{
 		prob   		= 0.05,
