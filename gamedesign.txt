@@ -40,7 +40,7 @@ ITEMS/PERKS/PICKUPS/SPELLS
 
 BLUEPRINTS
 - knife (safe shallows, kelp forest) [gustavo]
-- seaglide (kelp forest) [gustavo]
+- seaglide (kelp forest) [gustavo]                                          # Done
 - flippers (safe shallows, grassy plateau), stackable perk thing? []
 - gravity gun (above ground island?) []
 
@@ -59,7 +59,7 @@ MATERIALS                                                                   #   
 - titanium
 - kyanite
 - gold
-- ion cube                                                   
+- ion cube                                                                 
 - nickel
 - uranium
 
