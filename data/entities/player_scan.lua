@@ -1,6 +1,7 @@
 dofile_once("data/scripts/lib/utilities.lua")
+dofile("mods/subnoitica/lib/stringstore.lua")
+dofile("mods/subnoitica/lib/noitavariablestore.lua")
 
-local json = dofile_once("mods/subnoitica/lib/json.lua")
 local fragment_handlers = {
     seaglide = {
         requiredCount = 3,
@@ -21,7 +22,9 @@ function collision_trigger(colliding_entity_id)
     end
     local fragment_type = (string.gmatch(string.gmatch((string.gmatch(EntityGetTags(colliding_entity_id),
         'fragment_[^,| ]+'))(), '_[^,| ]+')(), '[^_]+')())
-    local all_fragment_counts = json.decode(GlobalsGetValue('fragments'))
+    local all_fragment_counts = stringstore.open_store(stringstore.noita.variable_storage_components(
+        EntityGetWithTag("player_unit")[1])).fragments
+        
     if (all_fragment_counts[fragment_type] == nil) then
         all_fragment_counts[fragment_type] = 0
     end
@@ -29,13 +32,11 @@ function collision_trigger(colliding_entity_id)
     if GameHasFlagRun("has_" .. fragment_type) == false then
         if all_fragment_counts[fragment_type] == (fragment_handlers[fragment_type].requiredCount - 1) then
             all_fragment_counts[fragment_type] = 0
-            GlobalsSetValue('fragments', json.encode((json.decode(GlobalsGetValue('fragments')))))
             fragment_handlers[fragment_type].onCollect(false)
             GameAddFlagRun("has_" .. fragment_type)
             return
         else
             all_fragment_counts[fragment_type] = all_fragment_counts[fragment_type] + 1
-            GlobalsSetValue('fragments', json.encode(all_fragment_counts))
         end
 
     elseif GameHasFlagRun("has_" .. fragment_type) == true then

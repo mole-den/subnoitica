@@ -2,9 +2,9 @@ ModLuaFileAppend( "data/scripts/gun/gun_actions.lua", "mods/subnoitica/files/act
 ModLuaFileAppend( "data/scripts/perks/perk_list.lua", "mods/subnoitica/files/perk_list.lua")
 ModMaterialsFileAdd("mods/subnoitica/files/materials.xml")
 
-
+dofile("mods/subnoitica/lib/stringstore.lua")
+dofile("mods/subnoitica/lib/noitavariablestore.lua")
 local nxml = dofile_once("mods/subnoitica/lib/nxml.lua")
-local json = dofile_once('mods/subnoitica/lib/json.lua')
 BiomeMapLoadImage( 0, 0, "mods/subnoitica/files/biome_map.png" )
 
 function OnModInit()
@@ -16,8 +16,9 @@ function OnModPostInit()
 end
 
 function OnPlayerSpawned( player_entity )
-	GlobalsSetValue('fragments', '{}')
-	ConvertMaterialEverywhere( CellFactory_GetType( "air" ), CellFactory_GetType( "water" ) )
+	local x = stringstore.open_store(stringstore.noita.variable_storage_components(EntityGetWithTag("player_unit")[1]))
+	x.fragments = {}
+	x.materials = {}
 end
 
 function OnWorldPostUpdate()

@@ -501,6 +501,19 @@
     >
   </CollisionTriggerComponent>
 
+  <CollisionTriggerComponent
+    width="60"
+    height="20" 
+    required_tag="fragment"
+    destroy_this_entity_when_triggered="0"
+    >
+  </CollisionTriggerComponent>
+
+  <LuaComponent
+    script_collision_trigger_hit="mods/subnoitica/data/entities/collect_material.lua"
+    >
+  </LuaComponent>
+
   <LuaComponent
     script_collision_trigger_hit="mods/subnoitica/data/entities/player_scan.lua"
     >
