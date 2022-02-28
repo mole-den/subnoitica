@@ -15,7 +15,7 @@ g_fish =
 	{
 		prob   		= 0.3,
 		min_count	= 3,
-		max_count	= 5,    
+		max_count	= 6,    
 		entity 	= "data/entities/animals/peeper/peeper.xml"
 	},
 
@@ -27,10 +27,10 @@ g_fish =
 	},
 
 	{
-		prob   		= 0.03,
+		prob   		= 0.08,
 		min_count	= 1,
 		max_count	= 1,    
-		entity 	= "data/entities/animals/peeper/peeper.xml"
+		entity 	= "data/entities/animals/peeper/peeper.xml" --rabbit ray
 	},
 }
 
@@ -49,8 +49,22 @@ g_fragments =
 
 g_materails =
 {
-	
 
+	total_prob = 0,
+
+	{
+		prob   		= 0.95,
+		min_count	= 1,
+		max_count	= 1,   
+		entity 	= "data/entities/materials/titanium.xml"
+	}
+
+	{
+		prob   		= 0.05,
+		min_count	= 1,
+		max_count	= 1,   
+		entity 	= "data/entities/materials/gold.xml"
+	}
 
 }
 
@@ -60,6 +74,7 @@ function init( x, y, w, h )
 end
 
 function spawn_fish(x, y)
+	spawn(g_fish,x,y)
 	spawn(g_fish,x,y)
 end
 
