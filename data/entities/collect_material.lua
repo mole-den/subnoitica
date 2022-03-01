@@ -15,5 +15,5 @@ function collision_trigger(colliding_entity_id)
         store[material] = {count = 0}
     end
     store[material].count = store[material].count + 1
-    return
+    GamePrint(material .. " acquired")
 end
