@@ -1,4 +1,4 @@
-<Entity tags="material,ion_cube,item_physics">
+<Entity tags="material,material_ion_cube,item_physics">
 	<!--<BookComponent>
 	</BookComponent>-->
 

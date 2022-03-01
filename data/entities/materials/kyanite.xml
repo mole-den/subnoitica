@@ -1,4 +1,4 @@
-<Entity tags="material,kyanite,item_physics">
+<Entity tags="material,material_kyanite,item_physics">
 	<!--<BookComponent>
 	</BookComponent>-->
 
