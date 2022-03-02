@@ -70,6 +70,18 @@
 		color="ff0f98d8">
 	</Biome>
 
+	<Biome
+		biome_filename="data/biome/island_above.xml"
+		height_index="0"
+		color="ff8Ab0fc"> 
+	</Biome>
+
+	<Biome
+		biome_filename="data/biome/island_below.xml"
+		height_index="0"
+		color="ff11c0fc">
+	</Biome>
+
 	<!-- index is between 0 and 10 -->
 
   	<!-- ground layer -->

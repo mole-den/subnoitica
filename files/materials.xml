@@ -17,6 +17,21 @@
   	>
   </CellData>
 
+  <CellDataChild
+  	_parent="wood_loose"
+  	_inherit_reactions="1"
+  	name="subnoitica_wood" 
+	wang_color="ff64f640" >
+  	<Graphics
+	texture_file="data/materials_gfx/wood.png"
+	color="ff64f640"
+	audio_physics_material_wall="woodwall"
+	audio_physics_material_solid="wood" 
+	show_in_creative_mode="1"
+	>
+    </Graphics>
+  </CellDataChild>
+
   <CellData
 	name="coral"
 	ui_name="Coral"

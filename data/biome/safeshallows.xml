@@ -7,8 +7,8 @@
 
     wang_template_file="data/wang_tiles/safeshallows.png" 
     lua_script="data/scripts/biomes/safeshallows.lua"
-    wang_map_width="260"
-    wang_map_height="260"
+    wang_map_width="2600"
+    wang_map_height="2600"
     audio_music_2="fungicave"
     audio_ambience="fungicave"
   >

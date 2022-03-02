@@ -5,8 +5,8 @@
     background_image=""
     background_use_neighbor="0"
 
-    
-    lua_script="data/scripts/biomes/island_shore_right.lua"
+    wang_template_file="data/wang_tiles/island_below.png" 
+    lua_script="data/scripts/biomes/island_below.lua"
     wang_map_width="260"
     wang_map_height="260"
     audio_music_2="fungicave"
@@ -82,6 +82,25 @@
       rare_use_perlin="0" 
       rare_use_polka="1" >
     </MaterialComponent>
+
+    <VegetationComponent 
+			_enabled="1" 
+			is_visual="0" 
+			rand_seed="34676.86" 
+			tree_extra_y="25" 
+			tree_image_file="data/vegetation/bulbo_tree.png" 
+			tree_image_visual="" 
+			tree_material="wood_loose" 
+			tree_probability="0.328571" 
+			tree_radius_high="0.414286" 
+			tree_radius_low="0.228571" 
+			tree_width="58.1143" 
+			visual_color="0xb4c072" 
+			visual_offset_x="0" 
+			visual_offset_y="7"
+			max_y="256"
+			>
+		</VegetationComponent>
     
   </Materials>
 
