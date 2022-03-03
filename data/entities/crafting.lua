@@ -1,4 +1,5 @@
 dofile_once("data/scripts/lib/utilities.lua")
-dofile("mods/subnoitica/lib/stringstore.lua")
-dofile("mods/subnoitica/lib/noitavariablestore.lua")
-local rec
+dofile_once("mods/subnoitica/lib/stringstore.lua")
+dofile_once("mods/subnoitica/lib/noitavariablestore.lua")
+recipies = dofile_once("data/entities/recipies.lua")
+gui = GuiCreate()
