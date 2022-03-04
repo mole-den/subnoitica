@@ -496,7 +496,7 @@
   <CollisionTriggerComponent
     width="60"
     height="20" 
-    required_tag="fragment"
+    required_tag="material"
     destroy_this_entity_when_triggered="0"
     >
   </CollisionTriggerComponent>
