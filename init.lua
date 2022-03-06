@@ -19,6 +19,7 @@ function OnPlayerSpawned(player_entity)
     local x = stringstore.open_store(stringstore.noita.variable_storage_components(EntityGetWithTag("player_unit")[1]))
     x.fragments = {}
     x.materials = {}
+    dofile('data/entities/crafting.lua')
 end
 
 function OnWorldPostUpdate()

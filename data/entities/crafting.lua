@@ -5,6 +5,8 @@ recipies = dofile_once("data/entities/recipies.lua")
 store = stringstore.open_store(stringstore.noita.variable_storage_components(
     EntityGetWithTag("player_unit")[1])).materials
 
+gui = GuiCreate()
+
 function craft(item)
     local i = recipies[item]
     for k, v in pairs(i.materials) do
